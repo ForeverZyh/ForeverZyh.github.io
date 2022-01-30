@@ -144,3 +144,15 @@ The details about how to get the course list and enrollment verification are pro
 The processed application hides the E-verification section, so I cannot put a snapshot here. You need to send a verification (automatically sent by ISS) by filling in your program (career) advisor's name, email, etc. 
 
 After the approval, you will get a check in the box. If not, then the verification request has not been approved. If you are urgent, you can push the program (career) advisor by sending them an email (and cc your advisor to make your email noticed).
+
+
+
+
+
+
+
+
+
+Yuhao Zhang
+
+Jan 30 2022
