@@ -49,6 +49,8 @@
   align-items: center; /* Vertically center the content */
   width: 61.8%;
   overflow: hidden;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .image-container-3 img {
