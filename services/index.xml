@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Services | Yuhao Zhang (张煜皓)</title>
+    <link>https://foreverzyh.github.io/services/</link>
+      <atom:link href="https://foreverzyh.github.io/services/index.xml" rel="self" type="application/rss+xml" />
+    <description>Services</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://foreverzyh.github.io/media/icon_hua00f88fad60b7868af5bfc9120ceaf0a_569795_512x512_fill_lanczos_center_3.png</url>
+      <title>Services</title>
+      <link>https://foreverzyh.github.io/services/</link>
+    </image>
+    
+    <item>
+      <title>Neurips 2023, 2022, Reviewer</title>
+      <link>https://foreverzyh.github.io/services/neurips/</link>
+      <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://foreverzyh.github.io/services/neurips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ICML 2023, 2022, 2021, Reviewer</title>
+      <link>https://foreverzyh.github.io/services/icml/</link>
+      <pubDate>Sun, 23 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://foreverzyh.github.io/services/icml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WFVML 2023, Reviewer</title>
+      <link>https://foreverzyh.github.io/services/wfvml/</link>
+      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://foreverzyh.github.io/services/wfvml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FoMLAS 2023, 2022, 2021, Program Committee</title>
+      <link>https://foreverzyh.github.io/services/fomlas/</link>
+      <pubDate>Mon, 17 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://foreverzyh.github.io/services/fomlas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BANDS 2023, Program Committee</title>
+      <link>https://foreverzyh.github.io/services/bands/</link>
+      <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://foreverzyh.github.io/services/bands/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VMCAI 2023, Artifact Evaluation Committee</title>
+      <link>https://foreverzyh.github.io/services/vmcai/</link>
+      <pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://foreverzyh.github.io/services/vmcai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CAV 2021, Artifact Evaluation Committee</title>
+      <link>https://foreverzyh.github.io/services/cav/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://foreverzyh.github.io/services/cav/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wrote a [tutorial](/uploads/CPT.html) on requesting CPT for international students in our CS department.</title>
+      <link>https://foreverzyh.github.io/services/cpt/</link>
+      <pubDate>Wed, 01 Mar 2000 00:00:00 +0000</pubDate>
+      <guid>https://foreverzyh.github.io/services/cpt/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

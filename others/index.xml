@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Others | Yuhao Zhang (张煜皓)</title>
+    <link>https://foreverzyh.github.io/others/</link>
+      <atom:link href="https://foreverzyh.github.io/others/index.xml" rel="self" type="application/rss+xml" />
+    <description>Others</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://foreverzyh.github.io/media/icon_hua00f88fad60b7868af5bfc9120ceaf0a_569795_512x512_fill_lanczos_center_3.png</url>
+      <title>Others</title>
+      <link>https://foreverzyh.github.io/others/</link>
+    </image>
+    
+    <item>
+      <title>some things</title>
+      <link>https://foreverzyh.github.io/others/climb/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://foreverzyh.github.io/others/climb/</guid>
+      <description>&lt;p&gt;🧗 I fell in love with indoor bouldering during my Ph.D. and have climbed once to twice a week since May 2022.
+I won the third place in the beginner category of the 2023 climbing competition in our university!
+I&amp;rsquo;m tackling V3-V5 routes and will continue improving and practicing in the coming years.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>some things</title>
+      <link>https://foreverzyh.github.io/others/gym/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://foreverzyh.github.io/others/gym/</guid>
+      <description>&lt;p&gt;When I&amp;rsquo;m not hanging from cliffs, I usually hit the gym about three to four times a week since September 2021. After cutting nearly 20 pounds of pandemic weight gain, I embarked on a body-fat-cutting journey in April 2023. I achieved the single-digit-body-fat goal in September of the same year and shifted to clean bulking mode afterward.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>some things</title>
+      <link>https://foreverzyh.github.io/others/read/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://foreverzyh.github.io/others/read/</guid>
+      <description>&lt;p&gt;But it&amp;rsquo;s not all about physical pursuits for me. I&amp;rsquo;ve been immersing myself in (non-CS) books since September 2021,
+dedicating more than one hour every day to reading. I love reading novels by Fyodor Dostoevsky and writers Lationamericano
+like as Mario Vargas Llosa and Gabriel García Márquez. On the other side, I delved into Lacanian Psychoanalysis and am currently studying the German Idealism Philosophy of Hegel. My journey won&amp;rsquo;t stop there; I&amp;rsquo;m eager to explore Phenomenology, courtesy of Husserl and Merleau-Ponty, and (post-) structuralism critique of ideology by Althusser.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

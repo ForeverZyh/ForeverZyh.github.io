@@ -1,0 +1,18 @@
+{
+  "name": "Yuhao Zhang (张煜皓)",
+  "short_name": "Yuhao Zhang (张煜皓)",
+  "lang": "en-us",
+  "theme_color": "#ac060b",
+  "background_color": "#ac060b",
+  "icons": [{
+    "src": "/media/icon_hua00f88fad60b7868af5bfc9120ceaf0a_569795_192x192_fill_lanczos_center_3.png",
+    "sizes": "192x192",
+    "type": "image/png"
+    }, {
+    "src": "/media/icon_hua00f88fad60b7868af5bfc9120ceaf0a_569795_512x512_fill_lanczos_center_3.png",
+    "sizes": "512x512",
+    "type": "image/png"
+     }],
+  "display": "standalone",
+  "start_url": "/?utm_source=web_app_manifest"
+}

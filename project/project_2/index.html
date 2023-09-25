@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: September 25, 2023 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@400;700&family=Roboto+Mono&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@400;700&family=Roboto+Mono&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.047268c6dd09ad74ba54a0ba71837064.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.19ace57e8fb59446025b8bf3d7d5865c.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Yuhao Zhang" />
+
+
+
+
+
+  
+
+<meta name="description" content="This thrust studies the problem of proving and improving the robustness of deep learning models against inference-time adversarial examples. One distinctive nature of deep learning models is their vulnerability to malicious attacks, even when the underlying program, compiler, and system implementations are correct." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://foreverzyh.github.io/project/project_2/" />
+<link rel="canonical" href="https://foreverzyh.github.io/project/project_2/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hua00f88fad60b7868af5bfc9120ceaf0a_569795_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hua00f88fad60b7868af5bfc9120ceaf0a_569795_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#ac060b" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://foreverzyh.github.io/media/icon_hua00f88fad60b7868af5bfc9120ceaf0a_569795_512x512_fill_lanczos_center_3.png" />
+<meta property="og:site_name" content="Yuhao Zhang (张煜皓)" />
+<meta property="og:url" content="https://foreverzyh.github.io/project/project_2/" />
+<meta property="og:title" content="Robustness of Deep Learning Model Inference | Yuhao Zhang (张煜皓)" />
+<meta property="og:description" content="This thrust studies the problem of proving and improving the robustness of deep learning models against inference-time adversarial examples. One distinctive nature of deep learning models is their vulnerability to malicious attacks, even when the underlying program, compiler, and system implementations are correct." /><meta property="og:image" content="https://foreverzyh.github.io/media/icon_hua00f88fad60b7868af5bfc9120ceaf0a_569795_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2023-09-02T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2023-09-02T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://foreverzyh.github.io/project/project_2/"
+  },
+  "headline": "Robustness of Deep Learning Model Inference",
+  
+  "datePublished": "2023-09-02T00:00:00Z",
+  "dateModified": "2023-09-02T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Yuhao Zhang"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Yuhao Zhang (张煜皓)",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://foreverzyh.github.io/media/icon_hua00f88fad60b7868af5bfc9120ceaf0a_569795_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "This thrust studies the problem of proving and improving the robustness of deep learning models against inference-time adversarial examples. One distinctive nature of deep learning models is their vulnerability to malicious attacks, even when the underlying program, compiler, and system implementations are correct."
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Robustness of Deep Learning Model Inference | Yuhao Zhang (张煜皓)</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="13c691720a8605e74d914f8fec455dec" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.fe8634e7d00f14d07fb33caf14cc8e55.js"></script>
+
+  
+
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Yuhao Zhang (张煜皓)</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Yuhao Zhang (张煜皓)</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Research</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#featured"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#awards"><span>Awards</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#services"><span>Services</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#others"><span>Miscellaneous</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article article-project">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Robustness of Deep Learning Model Inference</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Sep 2, 2023
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h4>This thrust studies the problem of proving and improving the robustness of deep learning models against inference-time adversarial examples.</h4>
+<p>One distinctive nature of deep learning models is their vulnerability to malicious attacks, even when the underlying program, compiler, and system implementations are correct.
+Among the various attack types, inference-time (or test-time) attacks have received extensive study.
+These attacks craft a human-imperceptible perturbation to the test input to deceive the model into making incorrect predictions.</p>
+<p>Test-time defenses and attacks on deep learning models have been a never-ending cat-mouse game.
+My research in this thrust focuses on ending this game by providing deep learning model inference with provable and well-defined guarantees.</p>
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="/uploads/inference_a3t.png" alt="A3T" style="width: 50%; padding: 10px;">
+  <img src="/uploads/inference_arc.png" alt="ARC" style="width: 50%; padding: 10px;">
+</div>
+<p><strong>Papers:</strong> <a href="https://arxiv.org/abs/2002.09579" target="_blank" rel="noopener">A3T (ICML2020)</a>, <a href="https://arxiv.org/abs/2102.07818" target="_blank" rel="noopener">ARC (EMNLP2021)</a></p>
+<p><strong>Key ideas:</strong></p>
+<ol>
+<li>Languages for describing test-time robustness for deep learning models.</li>
+<li>Training approaches that improve the test-time model robustness.</li>
+<li>Use abstract interpretation to verify whether models are robust to attacks.</li>
+</ol>
+<p><strong>Programmable perturbation space</strong>
+Existing work on robustness for deep learning model inference focuses on specific attacks.
+Such robustness often caters to particular needs but is not universally applicable.
+To cover a broader spectrum of needs, I introduced the idea of programmable perturbation space, a language for defining attacks/perturbations to input sequences (for language models).
+The versatile language empowers users to express their specific robustness requirements as user-defined string transformations and combinations.</p>
+<p><strong>Robust training approaches</strong>
+I have proposed A3T, an approach that trains robust models to a given programmable perturbation space.
+Computing the worst-case loss of a perturbation space is infeasible because the space can be enormous and, therefore, impractical to enumerate.
+The key idea of A3T is to approximate the worst-case by decomposing the programmable perturbation space into two subsets, one that can be explored using gradient-based search and one that can be abstracted using provable training such as ARC.
+This idea of decomposition has inspired the state-of-the-art robust training method <a href="https://arxiv.org/abs/2210.04871" target="_blank" rel="noopener">SABR</a>.</p>
+<p><strong>Verifying robustness of recursive models</strong>
+In pursuit of providing formal guarantees for model robustness, I have introduced the ARC approach.
+ARC is designed to generate proofs of the robustness of recursive models, such as LSTMs or Tree-LSTMs, against attacks specified in the programmable perturbation space.
+The key idea underlying ARC involves recursive memoization and abstraction of sets of possible hidden states, a task that becomes infeasible for enumeration due to its exponential growth with the input sequence length.
+As ARC over-approximates the sets of all possible outcomes, it captures the worst-case scenario for the specified attack, thus establishing a proof for model robustness.</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://foreverzyh.github.io"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu01e4ec326c50cd7aefc985dadaf9dbf8_162764_270x270_fill_q75_lanczos_center.jpg" alt="Yuhao Zhang"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://foreverzyh.github.io">Yuhao Zhang</a></h5>
+      <h6 class="card-subtitle">Ph.D. student in Computer Science</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=0Nt2bGUAAAAJ&amp;hl=en&amp;authuser=1" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/ForeverZyh" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/yuhaoz/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/uploads/CV.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/YuhaoZhang16" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="project-related-pages content-widget-hr">
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+    </div>
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2023 Yuhao Zhang.
+  </p>
+  
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.f64289d8217e08e3afcd597d60836062.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+<script src="/en/js/wowchemy.min.387a7b38a3dfead6f96c96742d20f5af.js"></script>
+
+
+
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

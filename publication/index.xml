@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications | Yuhao Zhang (张煜皓)</title>
+    <link>https://foreverzyh.github.io/publication/</link>
+      <atom:link href="https://foreverzyh.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://foreverzyh.github.io/media/icon_hua00f88fad60b7868af5bfc9120ceaf0a_569795_512x512_fill_lanczos_center_3.png</url>
+      <title>Publications</title>
+      <link>https://foreverzyh.github.io/publication/</link>
+    </image>
+    
+    <item>
+      <title>Reliability Assurance for Deep Neural Network Architectures Against Numerical Defects</title>
+      <link>https://foreverzyh.github.io/publication/se_ml_icse2023/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://foreverzyh.github.io/publication/se_ml_icse2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BagFlip: A Certified Defense Against Data Poisoning</title>
+      <link>https://foreverzyh.github.io/publication/pl_ml_neurips2022/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://foreverzyh.github.io/publication/pl_ml_neurips2022/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Overwatch: Learning Patterns in Code Edit Sequences</title>
+      <link>https://foreverzyh.github.io/publication/pl_oopsla2023/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://foreverzyh.github.io/publication/pl_oopsla2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Certified Robustness to Programmable Transformations in LSTMs</title>
+      <link>https://foreverzyh.github.io/publication/pl_ml_emnlp2021/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://foreverzyh.github.io/publication/pl_ml_emnlp2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Detecting Numerical Bugs in Neural Network Architectures</title>
+      <link>https://foreverzyh.github.io/publication/se_ml_fse2020/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://foreverzyh.github.io/publication/se_ml_fse2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robustness to Programmable String Transformations via Augmented Abstract Training</title>
+      <link>https://foreverzyh.github.io/publication/pl_ml_icml2020/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://foreverzyh.github.io/publication/pl_ml_icml2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Empirical Study on TensorFlow Program Bugs</title>
+      <link>https://foreverzyh.github.io/publication/se_ml_issta2018/</link>
+      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://foreverzyh.github.io/publication/se_ml_issta2018/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
