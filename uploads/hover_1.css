@@ -13,7 +13,7 @@
 }
 
 .image-container-1:hover img {
-  transform: translateY(-20px); /* Move the image 20 pixels to the right on hover */
+  transform: translateY(-10px); /* Move the image 20 pixels to the right on hover */
 }
 
 
@@ -32,7 +32,7 @@
 }
 
 .image-container-2:hover img {
-  transform: translateY(-20px); /* Move the image 20 pixels to the right on hover */
+  transform: translateY(-10px); /* Move the image 20 pixels to the right on hover */
 }
 
 .upper-part {
@@ -44,18 +44,19 @@
 
 .image-container-3 {
   position: relative; /* Necessary for absolute positioning */
-  display: inline-block; /* To prevent the image container from taking up full width */
-  margin-left: 40px;
-  margin-right: 40px;
+  display: flex; /* To prevent the image container from taking up full width */
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  width: 61.8%;
   overflow: hidden;
 }
 
 .image-container-3 img {
-  width: 100%; /* Make the image responsive within the container */
+  max-width: 100%;
   height: auto;
   transition: transform 0.3s ease; /* Add a smooth transition effect for the transform property */
 }
 
 .image-container-3:hover img {
-  transform: translateY(20px); /* Move the image 20 pixels to the right on hover */
+  transform: translateY(10px); /* Move the image 20 pixels to the right on hover */
 }
