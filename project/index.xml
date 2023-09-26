@@ -43,7 +43,7 @@ Such attacks have been exploited to insert backdoors into deep learning models s
     &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://foreverzyh.github.io/uploads/training_overview.png&#34; alt=&#34;overview&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Papers:&lt;/strong&gt; &lt;a href=&#34;https://arxiv.org/abs/2205.13634&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BagFlip (Neurips2022)&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2301.11824&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PECAN (Under Submission)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Papers:&lt;/strong&gt; &lt;a href=&#34;https://arxiv.org/abs/2205.13634&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BagFlip (NeurIPS2022)&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2301.11824&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PECAN (Under Submission)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Key ideas&lt;/strong&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Probabilistic and deterministic certified defenses against training-time attacks.&lt;/li&gt;
