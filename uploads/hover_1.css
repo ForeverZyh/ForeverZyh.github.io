@@ -2,8 +2,8 @@
   position: relative; /* Necessary for absolute positioning */
   display: inline-block; /* To prevent the image container from taking up full width */
   margin-right: 40px;
-  margin-top: 40px;
-  overflow: hidden;
+  margin-top: 20px;
+  /*overflow: hidden;*/
 }
 
 .image-container-1 img {
@@ -13,16 +13,16 @@
 }
 
 .image-container-1:hover img {
-  transform: translateY(-10px); /* Move the image 20 pixels to the right on hover */
+  transform: translateY(20px); /* Move the image 20 pixels to the right on hover */
 }
 
 
 .image-container-2 {
   position: relative; /* Necessary for absolute positioning */
   display: inline-block; /* To prevent the image container from taking up full width */
-  margin-left: 40px;
-  margin-top: 40px;
-  overflow: hidden;
+  /*margin-left: 40px;*/
+  margin-top: 20px;
+  /*overflow: hidden;*/
 }
 
 .image-container-2 img {
@@ -32,7 +32,7 @@
 }
 
 .image-container-2:hover img {
-  transform: translateY(-10px); /* Move the image 20 pixels to the right on hover */
+  transform: translateY(-20px); /* Move the image 20 pixels to the right on hover */
 }
 
 .upper-part {
@@ -47,10 +47,12 @@
   display: flex; /* To prevent the image container from taking up full width */
   justify-content: center; /* Horizontally center the content */
   align-items: center; /* Vertically center the content */
-  width: 61.8%;
-  overflow: hidden;
-  margin-right: 40px;
+  /*width: 61.8%;*/
+  /*overflow: hidden;*/
   margin-left: 40px;
+  margin-top: 20px;
+  /*margin-right: 40px;*/
+  /*margin-left: 40px;*/
 }
 
 .image-container-3 img {
@@ -60,5 +62,5 @@
 }
 
 .image-container-3:hover img {
-  transform: translateY(10px); /* Move the image 20 pixels to the right on hover */
+  transform: translateY(20px); /* Move the image 20 pixels to the right on hover */
 }
