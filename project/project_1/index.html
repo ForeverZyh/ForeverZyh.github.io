@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Wowchemy. https://www.wowchemy.com -->
-<!-- Last Published: October 16, 2023 --><html lang="en-us" >
+<!-- Last Published: November 7, 2023 --><html lang="en-us" >
 
 
 <head>
@@ -276,7 +276,7 @@
 
   
 
-<meta name="description" content="This thrust studies the problem of designing certifiable defenses against data poisoning and backdoor attacks during training. Empowering deep learning models to tackle a wide array of complex problems hinges on their training with ample high-quality data." />
+<meta name="description" content="This project designs certifiable defenses against data poisoning and backdoor attacks during training. High-quality, abundant data is crucial for training deep learning models to address complex problems. However, the integrity of this data is threatened by data poisoning attacks, where an attacker can subtly modify the training set to manipulate the model&rsquo;s predictions." />
 
 
 
@@ -316,7 +316,7 @@
 <meta property="og:site_name" content="Yuhao Zhang (张煜皓)" />
 <meta property="og:url" content="https://foreverzyh.github.io/project/project_1/" />
 <meta property="og:title" content="Integrity of Deep Learning Model Training | Yuhao Zhang (张煜皓)" />
-<meta property="og:description" content="This thrust studies the problem of designing certifiable defenses against data poisoning and backdoor attacks during training. Empowering deep learning models to tackle a wide array of complex problems hinges on their training with ample high-quality data." /><meta property="og:image" content="https://foreverzyh.github.io/media/icon_hua00f88fad60b7868af5bfc9120ceaf0a_569795_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:description" content="This project designs certifiable defenses against data poisoning and backdoor attacks during training. High-quality, abundant data is crucial for training deep learning models to address complex problems. However, the integrity of this data is threatened by data poisoning attacks, where an attacker can subtly modify the training set to manipulate the model&rsquo;s predictions." /><meta property="og:image" content="https://foreverzyh.github.io/media/icon_hua00f88fad60b7868af5bfc9120ceaf0a_569795_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
 
   
     <meta
@@ -369,7 +369,7 @@
       "url": "https://foreverzyh.github.io/media/icon_hua00f88fad60b7868af5bfc9120ceaf0a_569795_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "This thrust studies the problem of designing certifiable defenses against data poisoning and backdoor attacks during training. Empowering deep learning models to tackle a wide array of complex problems hinges on their training with ample high-quality data."
+  "description": "This project designs certifiable defenses against data poisoning and backdoor attacks during training. High-quality, abundant data is crucial for training deep learning models to address complex problems. However, the integrity of this data is threatened by data poisoning attacks, where an attacker can subtly modify the training set to manipulate the model\u0026rsquo;s predictions."
 }
 </script>
 
@@ -848,11 +848,11 @@
   <div class="article-container">
 
     <div class="article-style">
-      <h4>This thrust studies the problem of designing certifiable defenses against data poisoning and backdoor attacks during training.</h4>
-<p>Empowering deep learning models to tackle a wide array of complex problems hinges on their training with ample high-quality data.
-However, the threat of data poisoning attacks raises a significant concern, as the attacker can modify the training set to manipulate the prediction of the victim model.
-Such attacks have been exploited to insert backdoors into deep learning models surreptitiously.</p>
-<p>The concern for data-poisoning attacks on deep learning models has led to the third thrust of my research on certified defenses for ensuring the integrity of deep learning model training.</p>
+      <h4>This project designs certifiable defenses against data poisoning and backdoor attacks during training.</h4>
+<p>High-quality, abundant data is crucial for training deep learning models to address complex problems.
+However, the integrity of this data is threatened by data poisoning attacks, where an attacker can subtly modify the training set to manipulate the model&rsquo;s predictions.
+Such attacks have been successfully utilized to surreptitiously insert backdoors into deep learning models.</p>
+<p>This concern for data-poisoning attacks on deep learning models has led to my research on certified defenses ensuring the integrity of deep learning model training.</p>
 <p>
 
 
@@ -880,12 +880,12 @@ Such attacks have been exploited to insert backdoors into deep learning models s
 <li>Probabilistic and deterministic certified defenses against training-time attacks.</li>
 <li>A holistic view of handling test-time and training-time threats.</li>
 </ul>
-<p><strong>Certified defenses against training-time attacks</strong>
-I have proposed two model-agnostic certified defenses, BagFlip and PECAN, against training-time attacks that modify the training set and test inputs but do not control the training algorithm.
-For a given training set, whether it is potentially poisoned or not, and a training algorithm, these defenses construct a verifiable training algorithm on top of the given algorithm by creating an ensemble of models, each trained on subsets of the training data.</p>
-<p><strong>Holistic view of test and training</strong>
-These approaches take a holistic view of test and training, abstracting away the intricate details of the training algorithm, which can pose challenges for verification techniques in establishing meaningful bounds.
-Leveraging this holistic view, BagFlip employs randomized smoothing to construct probabilistic proofs. In contrast, PECAN generates deterministic proofs by seamlessly integrating training-time and test-time proofs derived from corresponding techniques.</p>
+<p><strong>Certified defenses against test-time and training-time attacks in a holistic view</strong>
+I have proposed two certified defenses, BagFlip and PECAN, against data poisoning attacks that can modify both the training set and test inputs.
+These defenses construct a verifiable training algorithm over the original algorithm by creating an ensemble of models, each trained on subsets of the training data.
+These defenses adopt a holistic view of inference and training processes by regarding these processes as a closed box, abstracting away the intricate details of the training algorithm, which can pose challenges for verification techniques in establishing meaningful bounds.
+Leveraging this holistic view, BagFlip employs randomized smoothing to construct <em>probabilistic</em> proofs.
+In contrast, PECAN generates <em>deterministic</em> proofs by seamlessly integrating training-time and test-time proofs derived from corresponding techniques.</p>
 
     </div>
 

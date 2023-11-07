@@ -13,7 +13,7 @@
 }
 
 .image-container-1:hover img {
-  transform: translateY(20px); /* Move the image 20 pixels to the right on hover */
+  transform: translateY(-20px); /* Move the image 20 pixels to the right on hover */
 }
 
 
@@ -62,5 +62,5 @@
 }
 
 .image-container-3:hover img {
-  transform: translateY(20px); /* Move the image 20 pixels to the right on hover */
+  transform: translateY(-20px); /* Move the image 20 pixels to the right on hover */
 }

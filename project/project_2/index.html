@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Wowchemy. https://www.wowchemy.com -->
-<!-- Last Published: October 16, 2023 --><html lang="en-us" >
+<!-- Last Published: November 7, 2023 --><html lang="en-us" >
 
 
 <head>
@@ -276,7 +276,7 @@
 
   
 
-<meta name="description" content="This thrust studies the problem of proving and improving the robustness of deep learning models against inference-time adversarial examples. One distinctive nature of deep learning models is their vulnerability to malicious attacks, even when the underlying program, compiler, and system implementations are correct." />
+<meta name="description" content="This project proves and improves the robustness of deep learning models against inference-time adversarial examples. A unique characteristic of deep learning models is their vulnerability to malicious attacks, even when the underlying code implementations are correct." />
 
 
 
@@ -316,7 +316,7 @@
 <meta property="og:site_name" content="Yuhao Zhang (张煜皓)" />
 <meta property="og:url" content="https://foreverzyh.github.io/project/project_2/" />
 <meta property="og:title" content="Robustness of Deep Learning Model Inference | Yuhao Zhang (张煜皓)" />
-<meta property="og:description" content="This thrust studies the problem of proving and improving the robustness of deep learning models against inference-time adversarial examples. One distinctive nature of deep learning models is their vulnerability to malicious attacks, even when the underlying program, compiler, and system implementations are correct." /><meta property="og:image" content="https://foreverzyh.github.io/media/icon_hua00f88fad60b7868af5bfc9120ceaf0a_569795_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:description" content="This project proves and improves the robustness of deep learning models against inference-time adversarial examples. A unique characteristic of deep learning models is their vulnerability to malicious attacks, even when the underlying code implementations are correct." /><meta property="og:image" content="https://foreverzyh.github.io/media/icon_hua00f88fad60b7868af5bfc9120ceaf0a_569795_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
 
   
     <meta
@@ -369,7 +369,7 @@
       "url": "https://foreverzyh.github.io/media/icon_hua00f88fad60b7868af5bfc9120ceaf0a_569795_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "This thrust studies the problem of proving and improving the robustness of deep learning models against inference-time adversarial examples. One distinctive nature of deep learning models is their vulnerability to malicious attacks, even when the underlying program, compiler, and system implementations are correct."
+  "description": "This project proves and improves the robustness of deep learning models against inference-time adversarial examples. A unique characteristic of deep learning models is their vulnerability to malicious attacks, even when the underlying code implementations are correct."
 }
 </script>
 
@@ -848,12 +848,13 @@
   <div class="article-container">
 
     <div class="article-style">
-      <h4>This thrust studies the problem of proving and improving the robustness of deep learning models against inference-time adversarial examples.</h4>
-<p>One distinctive nature of deep learning models is their vulnerability to malicious attacks, even when the underlying program, compiler, and system implementations are correct.
-Among the various attack types, inference-time (or test-time) attacks have received extensive study.
+      <h4>This project proves and improves the robustness of deep learning models against inference-time adversarial examples.</h4>
+<p>A unique characteristic of deep learning models is their vulnerability to malicious attacks, even when the underlying code implementations are correct.
+Among the various types of attacks, inference-time (or test-time) attacks have been extensively studied as they directly affect the performance and reliability of the model.
 These attacks craft a human-imperceptible perturbation to the test input to deceive the model into making incorrect predictions.</p>
-<p>Test-time defenses and attacks on deep learning models have been a never-ending cat-mouse game.
-My research in this thrust focuses on ending this game by providing deep learning model inference with provable and well-defined guarantees.</p>
+<p>Test-time defenses and attacks on deep learning models have been a never-ending cat-and-mouse game.
+My research aims to end this game by providing deep learning model inference with well-defined and provable guarantees.
+I focus on the robustness verification of language models, an area previously unexplored due to the challenge of the discreteness of the inputs.</p>
 <div style="display: flex; justify-content: center; align-items: center;">
   <img src="/uploads/inference_a3t.png" alt="A3T" style="width: 50%; padding: 10px;">
   <img src="/uploads/inference_arc.png" alt="ARC" style="width: 50%; padding: 10px;">
@@ -862,24 +863,21 @@ My research in this thrust focuses on ending this game by providing deep learnin
 <p><strong>Key ideas:</strong></p>
 <ol>
 <li>Languages for describing test-time robustness for deep learning models.</li>
-<li>Training approaches that improve the test-time model robustness.</li>
-<li>Use abstract interpretation to verify whether models are robust to attacks.</li>
+<li>Training approaches for improving model robustness.</li>
+<li>An abstract interpretation technique for verifying model robustness.</li>
 </ol>
 <p><strong>Programmable perturbation space</strong>
-Existing work on robustness for deep learning model inference focuses on specific attacks.
-Such robustness often caters to particular needs but is not universally applicable.
-To cover a broader spectrum of needs, I introduced the idea of programmable perturbation space, a language for defining attacks/perturbations to input sequences (for language models).
-The versatile language empowers users to express their specific robustness requirements as user-defined string transformations and combinations.</p>
-<p><strong>Robust training approaches</strong>
-I have proposed A3T, an approach that trains robust models to a given programmable perturbation space.
-Computing the worst-case loss of a perturbation space is infeasible because the space can be enormous and, therefore, impractical to enumerate.
-The key idea of A3T is to approximate the worst-case by decomposing the programmable perturbation space into two subsets, one that can be explored using gradient-based search and one that can be abstracted using provable training such as ARC.
-This idea of decomposition has inspired the state-of-the-art robust training method <a href="https://arxiv.org/abs/2210.04871" target="_blank" rel="noopener">SABR</a>.</p>
+Existing work on robustness for deep learning model inference employs ad-hoc perturbations tailored to specific attacks, such as synonym substitutions. However, these perturbations do not apply to a wide range of scenarios. To address this limitation, I introduced the concept of a programmable perturbation space and designed a language for defining attacks/perturbations to input sequences for language models. The versatile language allows users to express their specific robustness requirements as user-defined string transformations and combinations.
+For example, it can express a perturbation that removes stop words and duplicates exclamation and question marks in a movie review.
+Furthermore, this language enables robustness verification and training approaches to compile and understand users&rsquo; needs seamlessly.</p>
 <p><strong>Verifying robustness of recursive models</strong>
-In pursuit of providing formal guarantees for model robustness, I have introduced the ARC approach.
-ARC is designed to generate proofs of the robustness of recursive models, such as LSTMs or Tree-LSTMs, against attacks specified in the programmable perturbation space.
-The key idea underlying ARC involves recursive memoization and abstraction of sets of possible hidden states, a task that becomes infeasible for enumeration due to its exponential growth with the input sequence length.
-As ARC over-approximates the sets of all possible outcomes, it captures the worst-case scenario for the specified attack, thus establishing a proof for model robustness.</p>
+Given a robustness specification as a programmable perturbation space, my approach, ARC, generates proofs of robustness for recursive models, such as LSTMs or Tree-LSTMs.
+The key idea underlying ARC involves symbolically recursive memoization and abstraction of sets of possible hidden states, a task that becomes infeasible for enumeration due to its exponential growth with the input length.
+As ARC over-approximates the sets of all possible outcomes, it captures the worst-case scenario, thus establishing proofs for model robustness.</p>
+<p><strong>Robust training approaches</strong>
+When given a programmable perturbation space, the challenge of training robust models against the space lies in accurately approximating the worst-case loss. Traditional approximation methods provide loose approximations, such as the under-approximation by adversarial training or the over-approximation by provable training.
+To overcome this challenge, I proposed A3T, an innovative approach that approximates the worst-case by decomposing the programmable perturbation space into two subsets: one that can be explored using adversarial training and another that can be abstracted using provable training.
+This novel idea of decomposition <strong>has been adopted by the state-of-the-art robust training method, <a href="https://arxiv.org/abs/2210.04871" target="_blank" rel="noopener">SABR</a></strong>.</p>
 
     </div>
 

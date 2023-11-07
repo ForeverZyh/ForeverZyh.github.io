@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Wowchemy. https://www.wowchemy.com -->
-<!-- Last Published: October 16, 2023 --><html lang="en-us" >
+<!-- Last Published: November 7, 2023 --><html lang="en-us" >
 
 
 <head>
@@ -276,7 +276,7 @@
 
   
 
-<meta name="description" content="This thrust studies the increasingly important problem of ensuring the correctness of deep learning training and inference codes built on top of TensorFlow/PyTorch. Deep learning models have made remarkable advancements in solving complex and diverse problems." />
+<meta name="description" content="This project ensures the correctness of deep learning training and inference codes built on top of TensorFlow/PyTorch. Deep learning models have made remarkable advancements in solving complex and diverse problems. The training and inference of these models are coded built on platforms like TensorFlow and PyTorch." />
 
 
 
@@ -316,7 +316,7 @@
 <meta property="og:site_name" content="Yuhao Zhang (张煜皓)" />
 <meta property="og:url" content="https://foreverzyh.github.io/project/project_3/" />
 <meta property="og:title" content="Correctness of Codes using Deep Learning Platforms | Yuhao Zhang (张煜皓)" />
-<meta property="og:description" content="This thrust studies the increasingly important problem of ensuring the correctness of deep learning training and inference codes built on top of TensorFlow/PyTorch. Deep learning models have made remarkable advancements in solving complex and diverse problems." /><meta property="og:image" content="https://foreverzyh.github.io/media/icon_hua00f88fad60b7868af5bfc9120ceaf0a_569795_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:description" content="This project ensures the correctness of deep learning training and inference codes built on top of TensorFlow/PyTorch. Deep learning models have made remarkable advancements in solving complex and diverse problems. The training and inference of these models are coded built on platforms like TensorFlow and PyTorch." /><meta property="og:image" content="https://foreverzyh.github.io/media/icon_hua00f88fad60b7868af5bfc9120ceaf0a_569795_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
 
   
     <meta
@@ -369,7 +369,7 @@
       "url": "https://foreverzyh.github.io/media/icon_hua00f88fad60b7868af5bfc9120ceaf0a_569795_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "This thrust studies the increasingly important problem of ensuring the correctness of deep learning training and inference codes built on top of TensorFlow/PyTorch. Deep learning models have made remarkable advancements in solving complex and diverse problems."
+  "description": "This project ensures the correctness of deep learning training and inference codes built on top of TensorFlow/PyTorch. Deep learning models have made remarkable advancements in solving complex and diverse problems. The training and inference of these models are coded built on platforms like TensorFlow and PyTorch."
 }
 </script>
 
@@ -848,15 +848,16 @@
   <div class="article-container">
 
     <div class="article-style">
-      <h4>This thrust studies the increasingly important problem of ensuring the correctness of deep learning training and inference codes built on top of TensorFlow/PyTorch.</h4>
+      <h4>This project ensures the correctness of deep learning training and inference codes built on top of TensorFlow/PyTorch.</h4>
 <p>Deep learning models have made remarkable advancements in solving complex and diverse problems.
-These models manifest as training and inference codes developed on platforms like TensorFlow and PyTorch.
-These codes require a programming paradigm that differs significantly from traditional ones.
-As a result, new defects have emerged in deep learning codes, and we need to rethink the problem of verifying the correctness of these codes and providing provable fixes to these defects.</p>
-<p>In my research on the provable guarantees for the correctness of deep learning codes, I ask: <em>What are these new defects of deep learning codes? Detecting and fixing which brings the largest benefit to the deep learning community?</em>
-The first question leads me to conduct a pioneering empirical study of novel defects in deep learning codes.
-The second question guides my work on ensuring deep learning codes are free of <em>numerical defects</em>, which often manifest as <code>NaN</code> or <code>INF</code> during the computation of neural networks.
-These defects, which widely exist in deep learning codes, significantly impair the model&rsquo;s effectiveness and may lead to system crashes.</p>
+The training and inference of these models are coded built on platforms like TensorFlow and PyTorch.
+This coding requires a programming paradigm that differs significantly from traditional ones.
+For instance, programming logic relies more heavily on intensive matrix operations and activation functions than traditional programming structures such as branches and loops.
+As a result, new defects have emerged in deep learning code, and we need to rethink the problem of verifying code correctness and providing provably correct fixes to these defects.</p>
+<p>In my research on providing provable guarantees for the correctness of deep learning code, I pose the following questions: <em>What are these new defects? Which defect type is of most concern to the deep learning community?</em>
+The first question led me to conduct a pioneering empirical study of novel defects in deep learning code.
+This study found that <em>numerical defects</em>, which often manifest as <code>NaN</code> or <code>INF</code> during neural network computations, are prevalent in deep learning code and can significantly impair the model accuracy, potentially leading to system crashes.
+This finding addressed the second question and guided my work on ensuring deep learning code is free of numerical defects.</p>
 <div style="display: flex; justify-content: center; align-items: center;">
 <figure>
   <img src="/uploads/code_debar.png" alt="DEBAR" style="width:100%; padding: 10px;">
@@ -867,29 +868,33 @@ These defects, which widely exist in deep learning codes, significantly impair t
   <figcaption>RANUM: A framework for reliability assurance.</figcaption>
 </figure>
 </div>
-<p><strong>Papers:</strong> <a href="/uploads/An%20Empirical%20Study%20on%20TensorFlow%20Program%20Bugs-issta18.pdf">A empirical study (ISSTA2018)</a>, <a href="/uploads/Detecting%20Numerical%20Bugs%20in%20Neural%20Network%20Architectures-esec-fse20.pdf">DEBAR (FSE2020)</a>, <a href="http://linyil.com/res/pub/ICSE_2023_li_reliability.pdf" target="_blank" rel="noopener">RANUM (ICSE2023)</a></p>
+<p><strong>Papers:</strong> <a href="/uploads/An%20Empirical%20Study%20on%20TensorFlow%20Program%20Bugs-issta18.pdf">An empirical study (ISSTA2018)</a>, <a href="/uploads/Detecting%20Numerical%20Bugs%20in%20Neural%20Network%20Architectures-esec-fse20.pdf">DEBAR (FSE2020)</a>, <a href="http://linyil.com/res/pub/ICSE_2023_li_reliability.pdf" target="_blank" rel="noopener">RANUM (ICSE2023)</a></p>
 <p><strong>Key ideas:</strong></p>
 <ol>
-<li>A pioneering empirical study of defects in deep learning codes.</li>
-<li>Abstract interpretation techniques for verifying deep learning codes without numerical defects.</li>
-<li>A framework for reliability assurance for deep learning codes against numerical defects by providing failure-exhibiting tests and provable fix suggestions.</li>
+<li>A pioneering empirical study of defects in deep learning code.</li>
+<li>An abstract interpretation technique for verifying the absence of numerical defects.</li>
+<li>A framework for reliability assurance against numerical defects by providing failure-exhibiting tests and provably correct fix suggestions.</li>
 </ol>
 <p><strong>A pioneering empirical study</strong>
-Motivated by the need to study emerging defects in deep learning codes, I conducted a pioneering empirical study on the root causes, symptoms, and fixing strategies of these new defects.
-This empirical study not only serves as a bedrock of my work in this thrust but also inspires a multitude of endeavors in the research community,
-e.g., approaches for detecting new defects identified by our study, refinement of our taxonomy and extension to deep learning system in general.</p>
+Motivated by the need to investigate emerging defects in deep learning code, I conducted a pioneering empirical study on the root causes, symptoms, and fixing strategies of these new defects.
+<strong>This empirical study not only serves as a bedrock of my work but also inspires numerous initiatives in the research community.</strong>
+For example, our study identified new defects such as unaligned-shape defects, where the shape of a tensor, a data structure predominantly used in deep learning, does not align with its expected shape.
+Subsequently, <a href="https://www.semanticscholar.org/paper/Semi-static-type%2C-shape%2C-and-symbolic-shape-for-Hattori-Sawada/79b074d2cc9129ea9a0b757ac371e621eed781da" target="_blank" rel="noopener">a corresponding approach</a> has been proposed to detect this new defect.
+Additionally, Islam et al. conducted <a href="https://arxiv.org/abs/1906.01388" target="_blank" rel="noopener">a further empirical study</a> and &ldquo;adapted the classification scheme of root causes and bug effects&rdquo; from our study.</p>
 <p><strong>Verification of the absence of numerical defects</strong>
-My work, DEBAR, aims to detect numerical defects in deep learning codes.
-It achieves this by either constructing a proof demonstrating the absence of numerical defects within the codes or identifying suspicious computational graph nodes that may potentially have numerical defects.
-To construct such proof, we design refined yet scalable abstract domains, <em>tensor partitioning</em> and <em>interval with affine equality relation</em>, to over-approximate the output range of each node in the computational graph, representing the deep learning code.
-If a node receives an invalid range or its output overflows, we will report this node as suspicious. And if no such node exists in the code, we then get a correctness proof owing to the soundness of abstract interpretation.
-DEBAR has been applied to deep learning code maintained by TensorFlow and successfully detected numerical defects in them (<a href="https://github.com/tensorflow/models/pull/8221" target="_blank" rel="noopener">defect 1</a>, <a href="https://github.com/tensorflow/models/pull/8223" target="_blank" rel="noopener">defect 2</a>).</p>
-<p><strong>Provable fixes to numerical defects</strong>
-Once the defects are exposed, developers need to fix these defects. However, we found that developers either provide no fixes or heuristic fixes that do not eliminate these defects, such as reducing the learning rate.
-Therefore, our work, RANUM, aims to synthesize provable fixes to these defects for developers automatically.
-We apply interval preconditions to clipping the range of defective nodes in the computational graph.
-Striking the right balance with these interval preconditions is critical; if the preconditions are overly strong, they can hinder the model&rsquo;s performance, whereas if they are too weak, they may still result in numerical defects.
-We propose an abstraction optimization algorithm to find the weakest precondition that provably eliminates the defects.</p>
+My work, DEBAR, detects numerical defects in deep learning code.
+It can either construct a proof confirming the absence of numerical defects within the code or identify suspicious computational graph nodes that may have numerical defects.
+To construct such proof, I design refined yet scalable abstract domains, <em>tensor partitioning</em> and <em>interval with affine equality relation</em>, to over-approximate the output range of each node in the computational graph.
+If a node receives an invalid range or its output overflows, DEBAR will report this node as suspicious. And if no such node exists in the code, DEBAR then gets a correctness proof owing to the soundness of abstract interpretation.
+DEBAR is highly scalable as it only takes an average of 12.1 seconds for each model, while maintaining a low false positive rate of 7.7%.
+DEBAR has <strong>received recognition with the ACM SIGSOFT Distinguished Paper Award</strong> at FSE 2020 and it <strong>detected 11 real-world bugs</strong> of 48 models implemented in an official repository maintained by the TensorFlow team (See, e.g., <a href="https://github.com/tensorflow/models/pull/8221" target="_blank" rel="noopener">defect 1</a>, <a href="https://github.com/tensorflow/models/pull/8223" target="_blank" rel="noopener">defect 2</a>).</p>
+<p><strong>Provably correct fixes to numerical defects</strong>
+Once the defects are identified, developers need to fix them. We found that developers either provided no fixes or designed heuristic fixes that did not eliminate these defects, such as reducing the learning rate.
+Such heuristic fixes often delay the triggering of numerical defects during training and further obscure the defects.
+Our work, RANUM, automatically synthesizes provably correct fixes to these defects for developers.
+The fixes take the form of clipping the input ranges of some computational graph nodes.
+Striking the right balance with these input ranges is critical; overly tight ranges can hinder the model accuracy, whereas overly wide ranges may still result in numerical defects.
+We propose an abstraction optimization algorithm to find the tightest input ranges that provably eliminate the defects.</p>
 
     </div>
 

@@ -17,11 +17,11 @@
       <link>https://foreverzyh.github.io/project/project_1/</link>
       <pubDate>Sun, 03 Sep 2023 00:00:00 +0000</pubDate>
       <guid>https://foreverzyh.github.io/project/project_1/</guid>
-      <description>&lt;h4&gt;This thrust studies the problem of designing certifiable defenses against data poisoning and backdoor attacks during training.&lt;/h4&gt;
-&lt;p&gt;Empowering deep learning models to tackle a wide array of complex problems hinges on their training with ample high-quality data.
-However, the threat of data poisoning attacks raises a significant concern, as the attacker can modify the training set to manipulate the prediction of the victim model.
-Such attacks have been exploited to insert backdoors into deep learning models surreptitiously.&lt;/p&gt;
-&lt;p&gt;The concern for data-poisoning attacks on deep learning models has led to the third thrust of my research on certified defenses for ensuring the integrity of deep learning model training.&lt;/p&gt;
+      <description>&lt;h4&gt;This project designs certifiable defenses against data poisoning and backdoor attacks during training.&lt;/h4&gt;
+&lt;p&gt;High-quality, abundant data is crucial for training deep learning models to address complex problems.
+However, the integrity of this data is threatened by data poisoning attacks, where an attacker can subtly modify the training set to manipulate the model&amp;rsquo;s predictions.
+Such attacks have been successfully utilized to surreptitiously insert backdoors into deep learning models.&lt;/p&gt;
+&lt;p&gt;This concern for data-poisoning attacks on deep learning models has led to my research on certified defenses ensuring the integrity of deep learning model training.&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -49,12 +49,12 @@ Such attacks have been exploited to insert backdoors into deep learning models s
 &lt;li&gt;Probabilistic and deterministic certified defenses against training-time attacks.&lt;/li&gt;
 &lt;li&gt;A holistic view of handling test-time and training-time threats.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Certified defenses against training-time attacks&lt;/strong&gt;
-I have proposed two model-agnostic certified defenses, BagFlip and PECAN, against training-time attacks that modify the training set and test inputs but do not control the training algorithm.
-For a given training set, whether it is potentially poisoned or not, and a training algorithm, these defenses construct a verifiable training algorithm on top of the given algorithm by creating an ensemble of models, each trained on subsets of the training data.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Holistic view of test and training&lt;/strong&gt;
-These approaches take a holistic view of test and training, abstracting away the intricate details of the training algorithm, which can pose challenges for verification techniques in establishing meaningful bounds.
-Leveraging this holistic view, BagFlip employs randomized smoothing to construct probabilistic proofs. In contrast, PECAN generates deterministic proofs by seamlessly integrating training-time and test-time proofs derived from corresponding techniques.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Certified defenses against test-time and training-time attacks in a holistic view&lt;/strong&gt;
+I have proposed two certified defenses, BagFlip and PECAN, against data poisoning attacks that can modify both the training set and test inputs.
+These defenses construct a verifiable training algorithm over the original algorithm by creating an ensemble of models, each trained on subsets of the training data.
+These defenses adopt a holistic view of inference and training processes by regarding these processes as a closed box, abstracting away the intricate details of the training algorithm, which can pose challenges for verification techniques in establishing meaningful bounds.
+Leveraging this holistic view, BagFlip employs randomized smoothing to construct &lt;em&gt;probabilistic&lt;/em&gt; proofs.
+In contrast, PECAN generates &lt;em&gt;deterministic&lt;/em&gt; proofs by seamlessly integrating training-time and test-time proofs derived from corresponding techniques.&lt;/p&gt;
 </description>
     </item>
     
@@ -63,12 +63,13 @@ Leveraging this holistic view, BagFlip employs randomized smoothing to construct
       <link>https://foreverzyh.github.io/project/project_2/</link>
       <pubDate>Sat, 02 Sep 2023 00:00:00 +0000</pubDate>
       <guid>https://foreverzyh.github.io/project/project_2/</guid>
-      <description>&lt;h4&gt;This thrust studies the problem of proving and improving the robustness of deep learning models against inference-time adversarial examples.&lt;/h4&gt;
-&lt;p&gt;One distinctive nature of deep learning models is their vulnerability to malicious attacks, even when the underlying program, compiler, and system implementations are correct.
-Among the various attack types, inference-time (or test-time) attacks have received extensive study.
+      <description>&lt;h4&gt;This project proves and improves the robustness of deep learning models against inference-time adversarial examples.&lt;/h4&gt;
+&lt;p&gt;A unique characteristic of deep learning models is their vulnerability to malicious attacks, even when the underlying code implementations are correct.
+Among the various types of attacks, inference-time (or test-time) attacks have been extensively studied as they directly affect the performance and reliability of the model.
 These attacks craft a human-imperceptible perturbation to the test input to deceive the model into making incorrect predictions.&lt;/p&gt;
-&lt;p&gt;Test-time defenses and attacks on deep learning models have been a never-ending cat-mouse game.
-My research in this thrust focuses on ending this game by providing deep learning model inference with provable and well-defined guarantees.&lt;/p&gt;
+&lt;p&gt;Test-time defenses and attacks on deep learning models have been a never-ending cat-and-mouse game.
+My research aims to end this game by providing deep learning model inference with well-defined and provable guarantees.
+I focus on the robustness verification of language models, an area previously unexplored due to the challenge of the discreteness of the inputs.&lt;/p&gt;
 &lt;div style=&#34;display: flex; justify-content: center; align-items: center;&#34;&gt;
   &lt;img src=&#34;https://foreverzyh.github.io/uploads/inference_a3t.png&#34; alt=&#34;A3T&#34; style=&#34;width: 50%; padding: 10px;&#34;&gt;
   &lt;img src=&#34;https://foreverzyh.github.io/uploads/inference_arc.png&#34; alt=&#34;ARC&#34; style=&#34;width: 50%; padding: 10px;&#34;&gt;
@@ -77,24 +78,21 @@ My research in this thrust focuses on ending this game by providing deep learnin
 &lt;p&gt;&lt;strong&gt;Key ideas:&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Languages for describing test-time robustness for deep learning models.&lt;/li&gt;
-&lt;li&gt;Training approaches that improve the test-time model robustness.&lt;/li&gt;
-&lt;li&gt;Use abstract interpretation to verify whether models are robust to attacks.&lt;/li&gt;
+&lt;li&gt;Training approaches for improving model robustness.&lt;/li&gt;
+&lt;li&gt;An abstract interpretation technique for verifying model robustness.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;Programmable perturbation space&lt;/strong&gt;
-Existing work on robustness for deep learning model inference focuses on specific attacks.
-Such robustness often caters to particular needs but is not universally applicable.
-To cover a broader spectrum of needs, I introduced the idea of programmable perturbation space, a language for defining attacks/perturbations to input sequences (for language models).
-The versatile language empowers users to express their specific robustness requirements as user-defined string transformations and combinations.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Robust training approaches&lt;/strong&gt;
-I have proposed A3T, an approach that trains robust models to a given programmable perturbation space.
-Computing the worst-case loss of a perturbation space is infeasible because the space can be enormous and, therefore, impractical to enumerate.
-The key idea of A3T is to approximate the worst-case by decomposing the programmable perturbation space into two subsets, one that can be explored using gradient-based search and one that can be abstracted using provable training such as ARC.
-This idea of decomposition has inspired the state-of-the-art robust training method &lt;a href=&#34;https://arxiv.org/abs/2210.04871&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SABR&lt;/a&gt;.&lt;/p&gt;
+Existing work on robustness for deep learning model inference employs ad-hoc perturbations tailored to specific attacks, such as synonym substitutions. However, these perturbations do not apply to a wide range of scenarios. To address this limitation, I introduced the concept of a programmable perturbation space and designed a language for defining attacks/perturbations to input sequences for language models. The versatile language allows users to express their specific robustness requirements as user-defined string transformations and combinations.
+For example, it can express a perturbation that removes stop words and duplicates exclamation and question marks in a movie review.
+Furthermore, this language enables robustness verification and training approaches to compile and understand users&amp;rsquo; needs seamlessly.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Verifying robustness of recursive models&lt;/strong&gt;
-In pursuit of providing formal guarantees for model robustness, I have introduced the ARC approach.
-ARC is designed to generate proofs of the robustness of recursive models, such as LSTMs or Tree-LSTMs, against attacks specified in the programmable perturbation space.
-The key idea underlying ARC involves recursive memoization and abstraction of sets of possible hidden states, a task that becomes infeasible for enumeration due to its exponential growth with the input sequence length.
-As ARC over-approximates the sets of all possible outcomes, it captures the worst-case scenario for the specified attack, thus establishing a proof for model robustness.&lt;/p&gt;
+Given a robustness specification as a programmable perturbation space, my approach, ARC, generates proofs of robustness for recursive models, such as LSTMs or Tree-LSTMs.
+The key idea underlying ARC involves symbolically recursive memoization and abstraction of sets of possible hidden states, a task that becomes infeasible for enumeration due to its exponential growth with the input length.
+As ARC over-approximates the sets of all possible outcomes, it captures the worst-case scenario, thus establishing proofs for model robustness.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Robust training approaches&lt;/strong&gt;
+When given a programmable perturbation space, the challenge of training robust models against the space lies in accurately approximating the worst-case loss. Traditional approximation methods provide loose approximations, such as the under-approximation by adversarial training or the over-approximation by provable training.
+To overcome this challenge, I proposed A3T, an innovative approach that approximates the worst-case by decomposing the programmable perturbation space into two subsets: one that can be explored using adversarial training and another that can be abstracted using provable training.
+This novel idea of decomposition &lt;strong&gt;has been adopted by the state-of-the-art robust training method, &lt;a href=&#34;https://arxiv.org/abs/2210.04871&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SABR&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -103,15 +101,16 @@ As ARC over-approximates the sets of all possible outcomes, it captures the wors
       <link>https://foreverzyh.github.io/project/project_3/</link>
       <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
       <guid>https://foreverzyh.github.io/project/project_3/</guid>
-      <description>&lt;h4&gt;This thrust studies the increasingly important problem of ensuring the correctness of deep learning training and inference codes built on top of TensorFlow/PyTorch.&lt;/h4&gt;
+      <description>&lt;h4&gt;This project ensures the correctness of deep learning training and inference codes built on top of TensorFlow/PyTorch.&lt;/h4&gt;
 &lt;p&gt;Deep learning models have made remarkable advancements in solving complex and diverse problems.
-These models manifest as training and inference codes developed on platforms like TensorFlow and PyTorch.
-These codes require a programming paradigm that differs significantly from traditional ones.
-As a result, new defects have emerged in deep learning codes, and we need to rethink the problem of verifying the correctness of these codes and providing provable fixes to these defects.&lt;/p&gt;
-&lt;p&gt;In my research on the provable guarantees for the correctness of deep learning codes, I ask: &lt;em&gt;What are these new defects of deep learning codes? Detecting and fixing which brings the largest benefit to the deep learning community?&lt;/em&gt;
-The first question leads me to conduct a pioneering empirical study of novel defects in deep learning codes.
-The second question guides my work on ensuring deep learning codes are free of &lt;em&gt;numerical defects&lt;/em&gt;, which often manifest as &lt;code&gt;NaN&lt;/code&gt; or &lt;code&gt;INF&lt;/code&gt; during the computation of neural networks.
-These defects, which widely exist in deep learning codes, significantly impair the model&amp;rsquo;s effectiveness and may lead to system crashes.&lt;/p&gt;
+The training and inference of these models are coded built on platforms like TensorFlow and PyTorch.
+This coding requires a programming paradigm that differs significantly from traditional ones.
+For instance, programming logic relies more heavily on intensive matrix operations and activation functions than traditional programming structures such as branches and loops.
+As a result, new defects have emerged in deep learning code, and we need to rethink the problem of verifying code correctness and providing provably correct fixes to these defects.&lt;/p&gt;
+&lt;p&gt;In my research on providing provable guarantees for the correctness of deep learning code, I pose the following questions: &lt;em&gt;What are these new defects? Which defect type is of most concern to the deep learning community?&lt;/em&gt;
+The first question led me to conduct a pioneering empirical study of novel defects in deep learning code.
+This study found that &lt;em&gt;numerical defects&lt;/em&gt;, which often manifest as &lt;code&gt;NaN&lt;/code&gt; or &lt;code&gt;INF&lt;/code&gt; during neural network computations, are prevalent in deep learning code and can significantly impair the model accuracy, potentially leading to system crashes.
+This finding addressed the second question and guided my work on ensuring deep learning code is free of numerical defects.&lt;/p&gt;
 &lt;div style=&#34;display: flex; justify-content: center; align-items: center;&#34;&gt;
 &lt;figure&gt;
   &lt;img src=&#34;https://foreverzyh.github.io/uploads/code_debar.png&#34; alt=&#34;DEBAR&#34; style=&#34;width:100%; padding: 10px;&#34;&gt;
@@ -122,29 +121,33 @@ These defects, which widely exist in deep learning codes, significantly impair t
   &lt;figcaption&gt;RANUM: A framework for reliability assurance.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Papers:&lt;/strong&gt; &lt;a href=&#34;https://foreverzyh.github.io/uploads/An%20Empirical%20Study%20on%20TensorFlow%20Program%20Bugs-issta18.pdf&#34;&gt;A empirical study (ISSTA2018)&lt;/a&gt;, &lt;a href=&#34;https://foreverzyh.github.io/uploads/Detecting%20Numerical%20Bugs%20in%20Neural%20Network%20Architectures-esec-fse20.pdf&#34;&gt;DEBAR (FSE2020)&lt;/a&gt;, &lt;a href=&#34;http://linyil.com/res/pub/ICSE_2023_li_reliability.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RANUM (ICSE2023)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Papers:&lt;/strong&gt; &lt;a href=&#34;https://foreverzyh.github.io/uploads/An%20Empirical%20Study%20on%20TensorFlow%20Program%20Bugs-issta18.pdf&#34;&gt;An empirical study (ISSTA2018)&lt;/a&gt;, &lt;a href=&#34;https://foreverzyh.github.io/uploads/Detecting%20Numerical%20Bugs%20in%20Neural%20Network%20Architectures-esec-fse20.pdf&#34;&gt;DEBAR (FSE2020)&lt;/a&gt;, &lt;a href=&#34;http://linyil.com/res/pub/ICSE_2023_li_reliability.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RANUM (ICSE2023)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Key ideas:&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;A pioneering empirical study of defects in deep learning codes.&lt;/li&gt;
-&lt;li&gt;Abstract interpretation techniques for verifying deep learning codes without numerical defects.&lt;/li&gt;
-&lt;li&gt;A framework for reliability assurance for deep learning codes against numerical defects by providing failure-exhibiting tests and provable fix suggestions.&lt;/li&gt;
+&lt;li&gt;A pioneering empirical study of defects in deep learning code.&lt;/li&gt;
+&lt;li&gt;An abstract interpretation technique for verifying the absence of numerical defects.&lt;/li&gt;
+&lt;li&gt;A framework for reliability assurance against numerical defects by providing failure-exhibiting tests and provably correct fix suggestions.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;A pioneering empirical study&lt;/strong&gt;
-Motivated by the need to study emerging defects in deep learning codes, I conducted a pioneering empirical study on the root causes, symptoms, and fixing strategies of these new defects.
-This empirical study not only serves as a bedrock of my work in this thrust but also inspires a multitude of endeavors in the research community,
-e.g., approaches for detecting new defects identified by our study, refinement of our taxonomy and extension to deep learning system in general.&lt;/p&gt;
+Motivated by the need to investigate emerging defects in deep learning code, I conducted a pioneering empirical study on the root causes, symptoms, and fixing strategies of these new defects.
+&lt;strong&gt;This empirical study not only serves as a bedrock of my work but also inspires numerous initiatives in the research community.&lt;/strong&gt;
+For example, our study identified new defects such as unaligned-shape defects, where the shape of a tensor, a data structure predominantly used in deep learning, does not align with its expected shape.
+Subsequently, &lt;a href=&#34;https://www.semanticscholar.org/paper/Semi-static-type%2C-shape%2C-and-symbolic-shape-for-Hattori-Sawada/79b074d2cc9129ea9a0b757ac371e621eed781da&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;a corresponding approach&lt;/a&gt; has been proposed to detect this new defect.
+Additionally, Islam et al. conducted &lt;a href=&#34;https://arxiv.org/abs/1906.01388&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;a further empirical study&lt;/a&gt; and &amp;ldquo;adapted the classification scheme of root causes and bug effects&amp;rdquo; from our study.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Verification of the absence of numerical defects&lt;/strong&gt;
-My work, DEBAR, aims to detect numerical defects in deep learning codes.
-It achieves this by either constructing a proof demonstrating the absence of numerical defects within the codes or identifying suspicious computational graph nodes that may potentially have numerical defects.
-To construct such proof, we design refined yet scalable abstract domains, &lt;em&gt;tensor partitioning&lt;/em&gt; and &lt;em&gt;interval with affine equality relation&lt;/em&gt;, to over-approximate the output range of each node in the computational graph, representing the deep learning code.
-If a node receives an invalid range or its output overflows, we will report this node as suspicious. And if no such node exists in the code, we then get a correctness proof owing to the soundness of abstract interpretation.
-DEBAR has been applied to deep learning code maintained by TensorFlow and successfully detected numerical defects in them (&lt;a href=&#34;https://github.com/tensorflow/models/pull/8221&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;defect 1&lt;/a&gt;, &lt;a href=&#34;https://github.com/tensorflow/models/pull/8223&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;defect 2&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Provable fixes to numerical defects&lt;/strong&gt;
-Once the defects are exposed, developers need to fix these defects. However, we found that developers either provide no fixes or heuristic fixes that do not eliminate these defects, such as reducing the learning rate.
-Therefore, our work, RANUM, aims to synthesize provable fixes to these defects for developers automatically.
-We apply interval preconditions to clipping the range of defective nodes in the computational graph.
-Striking the right balance with these interval preconditions is critical; if the preconditions are overly strong, they can hinder the model&amp;rsquo;s performance, whereas if they are too weak, they may still result in numerical defects.
-We propose an abstraction optimization algorithm to find the weakest precondition that provably eliminates the defects.&lt;/p&gt;
+My work, DEBAR, detects numerical defects in deep learning code.
+It can either construct a proof confirming the absence of numerical defects within the code or identify suspicious computational graph nodes that may have numerical defects.
+To construct such proof, I design refined yet scalable abstract domains, &lt;em&gt;tensor partitioning&lt;/em&gt; and &lt;em&gt;interval with affine equality relation&lt;/em&gt;, to over-approximate the output range of each node in the computational graph.
+If a node receives an invalid range or its output overflows, DEBAR will report this node as suspicious. And if no such node exists in the code, DEBAR then gets a correctness proof owing to the soundness of abstract interpretation.
+DEBAR is highly scalable as it only takes an average of 12.1 seconds for each model, while maintaining a low false positive rate of 7.7%.
+DEBAR has &lt;strong&gt;received recognition with the ACM SIGSOFT Distinguished Paper Award&lt;/strong&gt; at FSE 2020 and it &lt;strong&gt;detected 11 real-world bugs&lt;/strong&gt; of 48 models implemented in an official repository maintained by the TensorFlow team (See, e.g., &lt;a href=&#34;https://github.com/tensorflow/models/pull/8221&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;defect 1&lt;/a&gt;, &lt;a href=&#34;https://github.com/tensorflow/models/pull/8223&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;defect 2&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Provably correct fixes to numerical defects&lt;/strong&gt;
+Once the defects are identified, developers need to fix them. We found that developers either provided no fixes or designed heuristic fixes that did not eliminate these defects, such as reducing the learning rate.
+Such heuristic fixes often delay the triggering of numerical defects during training and further obscure the defects.
+Our work, RANUM, automatically synthesizes provably correct fixes to these defects for developers.
+The fixes take the form of clipping the input ranges of some computational graph nodes.
+Striking the right balance with these input ranges is critical; overly tight ranges can hinder the model accuracy, whereas overly wide ranges may still result in numerical defects.
+We propose an abstraction optimization algorithm to find the tightest input ranges that provably eliminate the defects.&lt;/p&gt;
 </description>
     </item>
     
