@@ -5,12 +5,20 @@
     <link>https://foreverzyh.github.io/news/</link>
       <atom:link href="https://foreverzyh.github.io/news/index.xml" rel="self" type="application/rss+xml" />
     <description>News</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 19 Nov 2023 08:30:00 -0600</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 14 Jun 2024 12:00:00 -0600</lastBuildDate>
     <image>
       <url>https://foreverzyh.github.io/media/icon_hua00f88fad60b7868af5bfc9120ceaf0a_569795_512x512_fill_lanczos_center_3.png</url>
       <title>News</title>
       <link>https://foreverzyh.github.io/news/</link>
     </image>
+    
+    <item>
+      <title>I graduated with a PhD in Computer Science</title>
+      <link>https://foreverzyh.github.io/news/2024_06_14/</link>
+      <pubDate>Fri, 14 Jun 2024 12:00:00 -0600</pubDate>
+      <guid>https://foreverzyh.github.io/news/2024_06_14/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>I am a top reviewer at NeurIPS 2023</title>

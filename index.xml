@@ -13,10 +13,42 @@
     </image>
     
     <item>
+      <title>I graduated with a PhD in Computer Science</title>
+      <link>https://foreverzyh.github.io/news/2024_06_14/</link>
+      <pubDate>Fri, 14 Jun 2024 12:00:00 -0600</pubDate>
+      <guid>https://foreverzyh.github.io/news/2024_06_14/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A One-Layer Decoder-Only Transformer is a Two-Layer RNN, With an Application to Certified Robustness</title>
+      <link>https://foreverzyh.github.io/publication/pl_ml_arct/</link>
+      <pubDate>Tue, 30 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://foreverzyh.github.io/publication/pl_ml_arct/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>CodeFort, Robust Training for Code Generation Models</title>
       <link>https://foreverzyh.github.io/publication/se_ml_codefort/</link>
       <pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://foreverzyh.github.io/publication/se_ml_codefort/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PECAN, A Deterministic Certified Defense Against Backdoor Attacks</title>
+      <link>https://foreverzyh.github.io/publication/pl_ml_pecan/</link>
+      <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://foreverzyh.github.io/publication/pl_ml_pecan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Verified Training for Counterfactual Explanation Robustness under Data Shift</title>
+      <link>https://foreverzyh.github.io/publication/pl_ml_vericfx/</link>
+      <pubDate>Wed, 06 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://foreverzyh.github.io/publication/pl_ml_vericfx/</guid>
       <description></description>
     </item>
     
